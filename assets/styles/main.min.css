@@ -1512,7 +1512,7 @@ html {
 }
 
 .leading-tight {
-    line-height: 1.25
+    line-height: 1.40
 }
 
 .text-primary {
@@ -1956,7 +1956,7 @@ html {
 
     .md\:text-5xl {
         font-size: 3rem;
-        line-height: 1
+        line-height: 1.1
     }
 
     .md\:text-2xl {
