@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+
+    <title>Blockchain | Hridesh</title>
+
+    <meta property="og:title" content="From Shadows to Light: AI Biases and Societal Reflections" />
+
+    <meta property="og:locale" content="en_US" />
+
+    <link rel="canonical" href="https://hrideshsapkota.com.np/allegory" />
+
+    <meta property="og:url" content="https://hrideshsapkota.com.np/allegory" />
+
+    <meta name="description"
+        content="A personal encounter with Plato's Allegory of the Cave, this blog post navigates through the rise of AI, its biases reflecting society's shadows, and proposes embracing responsibility for transformative change." />
+
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+
+    <meta property="og:site_name" content="Atlas Template" />
+
+    <meta property="og:image"
+        content="https://github.com/hridesh94/Atlas/blob/main/assets/img/allegory/robot%20and%20human.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="twitter:site" content="@hrideshsapkota" />
+
+    <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect" />
+
+    <link as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="preload" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
+
+    <link crossorigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-dark.min.css" />
+
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+    <!--Alpine Js V3-->
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+
+
+<body x-data="global()" x-init="themeInit()" :class="isMobileMenuOpen ? 'max-h-screen overflow-hidden relative' : ''"
+    class="dark:bg-primary">
+
+    <div id="main">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between py-6 lg:py-10">
+                <a href="/" class="flex items-center">
+                    <span href="/" class="mr-2">
+                        <img src="/assets/img/logo.svg" alt="logo" />
+                    </span>
+                    <p class="hidden font-body text-2xl font-bold text-primary dark:text-white lg:block">
+                        Hridesh
+                    </p>
+                </a>
+                <div class="flex items-center lg:hidden">
+                    <i class="bx mr-8 cursor-pointer text-3xl text-primary dark:text-white" @click="themeSwitch()"
+                        :class="isDarkMode ? 'bxs-sun' : 'bxs-moon'"></i>
+
+                    <svg width="24" height="15" xmlns="http://www.w3.org/2000/svg" @click="isMobileMenuOpen = true"
+                        class="fill-current text-primary dark:text-white">
+                        <g fill-rule="evenodd">
+                            <rect width="24" height="3" rx="1.5" />
+                            <rect x="8" y="6" width="16" height="3" rx="1.5" />
+                            <rect x="4" y="12" width="20" height="3" rx="1.5" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="hidden lg:block">
+                    <ul class="flex items-center">
+
+                        <li class="group relative mr-6 mb-1">
+                            <div
+                                class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
+                            </div>
+                            <a href="/"
+                                class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Intro</a>
+                        </li>
+
+                        <li class="group relative mr-6 mb-1">
+                            <div
+                                class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
+                            </div>
+                            <a href="/blog"
+                                class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Blog</a>
+                        </li>
+
+                        <li class="group relative mr-6 mb-1">
+                            <div
+                                class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
+                            </div>
+                            <a href="/uses"
+                                class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Uses</a>
+                        </li>
+
+                        <li class="group relative mr-6 mb-1">
+                            <div
+                                class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
+                            </div>
+                            <a href="/contact"
+                                class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Contact</a>
+                        </li>
+
+                        <li>
+                            <i class="bx cursor-pointer text-3xl text-primary dark:text-white" @click="themeSwitch()"
+                                :class="isDarkMode ? 'bxs-sun' : 'bxs-moon'"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="pointer-events-none fixed inset-0 z-50 flex bg-black bg-opacity-80 opacity-0 transition-opacity lg:hidden"
+            :class="isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : ''">
+            <div class="ml-auto w-2/3 bg-green p-4 md:w-1/3">
+                <i class="bx bx-x absolute top-0 right-0 mt-4 mr-4 text-4xl text-white"
+                    @click="isMobileMenuOpen = false"></i>
+                <ul class="mt-8 flex flex-col">
+
+                    <li class="">
+                        <a href="/" class="mb-3 block px-2 font-body text-lg font-medium text-white">Intro</a>
+                    </li>
+
+                    <li class="">
+                        <a href="/blog" class="mb-3 block px-2 font-body text-lg font-medium text-white">Blog</a>
+                    </li>
+
+                    <li class="">
+                        <a href="/uses" class="mb-3 block px-2 font-body text-lg font-medium text-white">Uses</a>
+                    </li>
+
+                    <li class="">
+                        <a href="/contact" class="mb-3 block px-2 font-body text-lg font-medium text-white">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="container mx-auto">
+                <div class="pt-16 lg:pt-20">
+                    <div class="border-b border-grey-lighter pb-8 sm:pb-12">
+                        <span
+                            class="mb-5 inline-block rounded-full bg-green-light px-2 py-1 font-body text-sm text-green sm:mb-8">Technology</span>
+                        <span
+                            class="mb-4 inline-block rounded-full bg-green-light px-2 py-1 font-body text-sm text-green-dark">Society</span>
+
+                        <h2
+                            class="block font-body text-3xl font-semibold leading-tight text-primary dark:text-white sm:text-4xl md:text-5xl">
+                            From Shadows to Light: AI Biases and Societal Reflections
+                        </h2>
+                        <div class="flex items-center pt-5 sm:pt-8">
+                            <p class="pr-2 font-body font-light text-primary dark:text-white">
+                                August 31, 2023
+                            </p>
+                            <span class="vdark:text-white font-body text-grey">//</span>
+                            <p class="pl-2 font-body font-light text-primary dark:text-white">
+                                5 min read
+                            </p>
+                        </div>
+                    </div>
+                    <div class="prose prose max-w-none border-b border-grey-lighter py-8 dark:prose-dark sm:py-12">
+                        <img src="/assets/img/allegory/cave.jpg" alt="Allegory of the cave" />
+                        <h3 id="lorem-ipsum-dolor-sit-amet">Discovering the Allegory</h3>
+                        <p>In the quiet corners of my life, I often find solace in the bookshop's embrace, seeking out
+                            classical times that I bring home with great intention. However, there they sometimes rest,
+                            untouched and gathering dust. One early Saturday morning, amidst the task of clearing the
+                            clutter that had accumulated over weeks, I stumbled upon a book I had acquired months ago—a
+                            book whose pages had remained largely unexplored. As I skimmed through its chapters, a
+                            particular story caught my eye, a chapter on allegory. This narrative gem was none other
+                            than Plato's famous <a href="https://www.youtube.com/watch?v=1RWOpQXTltA"
+                                style="text-decoration:none">allegory of the cave</a>, nestled within his work, "The
+                            Republic." </p>
+
+                        <p>For those unfamiliar, this allegory is a conversation between Plato's mentor Socrates and his
+                            brother Glaucon. It delves into the transformative impact of education and the lack thereof
+                            on our very nature. The allegory uses the imagery of captives chained within a cave,
+                            perceiving only shadows on the wall as reality. It's a profound exploration of perception,
+                            enlightenment, and the journey from ignorance to knowledge.</p>
+
+
+                        <p>The resonance of this story was profound, particularly in the context of our contemporary
+                            discourse surrounding the rapid ascent of artificial intelligence (AI). In a world where AI
+                            is pervasive, from our social media feeds to dominating headlines, debates rage over its
+                            benefits and drawbacks. It's reminiscent of the <a
+                                href="https://spectrum.ieee.org/the-uncanny-valley" style="text-decoration:none">uncanny
+                                valley</a> phenomenon, a realm where
+                            technology's power becomes almost eerie in its realism. This has been epitomized by the
+                            emergence of ChatGPT, an AI that showcases the remarkable capabilities of this technology.
+                        </p>
+
+                        <blockquote>
+                            <p>The shadows of bias have cast a long history, an indelible part of human existence.
+                            </p>
+                        </blockquote>
+
+                        <h3 id="lorem-ipsum-dolor-sit-amet">Shadows of Bias</h3>
+
+                        <p>Yet, within this discourse, a recurring theme emerges: the biases inherent in AI models. It's
+                            a facet that almost every technological innovation must confront when introduced into the
+                            fabric of society. The shadows of bias have cast a long history, an indelible part of human
+                            existence. Throughout history, marginalized voices have battled for their fundamental
+                            rights, a struggle that continues even today.</p>
+
+
+
+                        <p>In contemplating this, a thought germinated in my mind: what if the biases we encounter in AI
+                            are not anomalies, but reflections of our society's existing biases? Our data archives,
+                            collected over time, might unwittingly encapsulate the very biases we seek to overcome.
+                            These biases find their way into the algorithms, resulting in skewed outputs. The current
+                            controversies surrounding biases in AI might serve as a stark reminder that our past shadows
+                            continue to influence our present and future.
+                        </p>
+
+                        <div class="twitter-card">
+                            <h4 class="twitter-card-title"> "Our data archives, collected over time, might unwittingly
+                                encapsulate the very biases we seek to overcome. These biases find their way into the
+                                algorithms, resulting in skewed outputs."</h4>
+
+
+                        </div>
+
+                        <p>Yet, in the midst of this reflection, a counterargument emerges. Could these technologies,
+                            infused with our societal shadows, act as mirrors that force us to confront our prejudices?
+                            It's an intriguing perspective—the data-driven projections could be both a challenge and an
+                            opportunity. Instead of merely pointing fingers at technology, we could channel our focus
+                            towards ourselves and our societies. In essence, the biases within AI might be unsettling
+                            echoes of our deeply ingrained societal unfairness.
+                        </p>
+
+                        <h3 id="sed-do-eiusmod-tempor-incididunt">Embracing Responsibility</h3>
+
+                        <p>Ultimately, whether AI or social media algorithms, they remain creations of human ingenuity.
+                            The responsibility lies not solely in blaming these technologies, but in using their
+                            existence as a catalyst for introspection and transformation. If our innovations are mirrors
+                            reflecting our society, then it's upon us to reshape that society, to erase the biases that
+                            have been insidiously woven into its fabric.
+                        </p>
+
+                        <p><img src="/assets/img/allegory/robot and human.png" alt="Image" /></p>
+
+                        <p>As I closed the book that had ignited this trail of thought, I realized that the shadows in
+                            Plato's cave weren't just an ancient allegory—they were living on in our AI systems,
+                            compelling us to unravel their mystery. The journey from the cave's darkness to the light of
+                            understanding requires not just algorithms, but a concerted effort to restructure our
+                            societies, casting aside the chains of bias and forging a new path forward.
+                        </p>
+
+
+
+                        <div class="flex items-center py-10">
+                            <span class="pr-5 font-body font-medium text-primary dark:text-white">Share</span>
+                            <a href="/">
+                                <i
+                                    class="bx bxl-facebook text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"></i></a>
+                            <a href="/">
+                                <i
+                                    class="bx bxl-twitter pl-2 text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"></i>
+                            </a>
+                            <a href="/">
+                                <i
+                                    class="bx bxl-linkedin pl-2 text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"></i></a>
+                            <a href="/">
+                                <i
+                                    class="bx bxl-reddit pl-2 text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mx-auto">
+                <div
+                    class="flex flex-col items-center justify-between border-t border-grey-lighter py-10 sm:flex-row sm:py-12">
+                    <div class="mr-auto flex flex-col items-center sm:flex-row">
+                        <a href="/" class="mr-auto sm:mr-6">
+                            <img src="/assets/img/logo.svg" alt="logo" />
+                        </a>
+                        <p class="pt-5 font-body font-light text-primary dark:text-white sm:pt-0">
+                            ©2023 Hridesh Sapkota.
+                        </p>
+                    </div>
+                    <div class="mr-auto flex items-center pt-5 sm:mr-0 sm:pt-0">
+
+                        <a href="https://github.com/hridesh94 " target="_blank">
+                            <i
+                                class="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-github"></i>
+                        </a>
+
+                        <a href="https://codepen.io/hridesh94 " target="_blank">
+                            <i
+                                class="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-codepen"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/hridesh-sapkota-4a2bb9236/" target="_blank">
+                            <i
+                                class="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-linkedin"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>
