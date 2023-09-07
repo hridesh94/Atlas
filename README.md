@@ -1,6 +1,4 @@
-# Atlas Template
-
-Atlas is a premium template styled with TailwindCSS. Other open source libraries were also used to provide the functionality required to make your customization quicker and faster.
+#
 
 - [Alpine.js](https://github.com/alpinejs/alpine): A Vue-inspired jQuery alternative that offers you the reactive and declarative nature of big frameworks at a much lower cost.
 - [Boxicons](https://boxicons.com/): A simple vector icons set carefully crafted for designers and developers to use in your next project.
@@ -86,10 +84,3 @@ module.exports = {
 
 That’s it, next time you compile, you’ll have the `font-sans`, `font-serif` and `font-mono` classes available.
 
-### Why we used Alpine.js
-
-We debated a lot on what to use for our first templates since we wanted to start with HTML versions of our designs. The standard that you’ll see all over ThemeForest is jQuery but we think this is a subpar choice for the kind of developer that uses TailwindCSS.
-
-We also thought about using Vue but in practice we found it a bit verbose and a bit limiting because, since we wanted to keep everything in pure HTML, we couldn’t use Vue components.
-
-We opted to try Alpine.js and we think it’s like using the best of Vue, like its syntax and reactivity, without its baggage, like the virtual DOM, which would be overkill for a project like this.
