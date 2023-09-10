@@ -565,7 +565,7 @@ select {
 }
 
 .prose {
-    color: #072344;
+    color: #022131;
     max-width: 65ch
 }
 
@@ -586,7 +586,7 @@ select {
 }
 
 .prose :where(a):not(:where([class~=not-prose] *)):hover {
-    color: #072344
+    color: #022131
 }
 
 .prose :where(strong):not(:where([class~=not-prose] *)) {
@@ -988,7 +988,7 @@ select {
 }
 
 .prose :where(ul>li):not(:where([class~=not-prose] *)):before {
-    background-color: #072344
+    background-color: #022131
 }
 
 html {
