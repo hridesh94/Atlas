@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+
+  <title>Thorang La</title>
+
+  <meta property="og:title" content="The Singular Majesty of a Mountain Reverie" />
+
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="description"
+    content="A journey to Manang, a district nestled at the southern edge of the Himalayas, and explores the geological formation of the Himalayas due to the tectonic collision of Asian and Eurasian plates. It emphasizes the profound connection one feels with the ever-changing landscape of Manang, which seems to breathe and evolve with each passing moment. Manang is portrayed as the vibrant heart of the Himalayas, inviting readers to surrender to its allure and embrace its unique energy." />
+
+    <link rel="icon" type="image/png" href="/assets/img/reee crop.svg" />
+
+  <meta property="og:site_name" content="Atlas Template" />
+
+  <meta property="og:image" content="https://atlas.tailwindmade.com/assets/img/social.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="twitter:site" content="@hrideshsapkota" />
+
+  <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect" />
+
+  <link as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="preload" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
+
+  <link crossorigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-dark.min.css" />
+
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+
+  <!--Alpine Js V3-->
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+
+
+<body x-data="global()" x-init="themeInit()" :class="isMobileMenuOpen ? 'max-h-screen overflow-hidden relative' : ''"
+  class="dark:bg-primary">
+
+  <div id="main">
+    <div class="container mx-auto">
+      <div class="flex items-center justify-between py-6 lg:py-10">
+        <a href="/" class="flex items-center">
+          <span href="/" class="mr-2">
+            <img src="/assets/img/reee crop.svg" alt="logo" />
+          </span>
+          <p class="hidden font-body text-2xl font-bold text-primary dark:text-white lg:block">
+            Hridesh
+          </p>
+        </a>
+        <div class="flex items-center lg:hidden">
+          <i class="bx mr-8 cursor-pointer text-3xl text-primary dark:text-white" @click="themeSwitch()"
+            :class="isDarkMode ? 'bxs-sun' : 'bxs-moon'"></i>
+
+          <svg width="24" height="15" xmlns="http://www.w3.org/2000/svg" @click="isMobileMenuOpen = true"
+            class="fill-current text-primary dark:text-white">
+            <g fill-rule="evenodd">
+              <rect width="24" height="3" rx="1.5" />
+              <rect x="8" y="6" width="16" height="3" rx="1.5" />
+              <rect x="4" y="12" width="20" height="3" rx="1.5" />
+            </g>
+          </svg>
+        </div>
+        <div class="hidden lg:block">
+          <ul class="flex items-center">
+
+            <li class="group relative mr-6 mb-1">
+              <div
+                class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
+              </div>
+              <a href="/"
+                class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Intro</a>
+            </li>
+
+            <li class="group relative mr-6 mb-1">
+              <div
+                class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
+              </div>
+              <a href="/blog"
+                class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Blog</a>
+            </li>
+
+            <li class="group relative mr-6 mb-1">
+              <div
+                class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
+              </div>
+              <a href="/uses"
+                class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Uses</a>
+            </li>
+
+            <li class="group relative mr-6 mb-1">
+              <div
+                class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
+              </div>
+              <a href="/contact"
+                class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Contact</a>
+            </li>
+
+            <li>
+              <i class="bx cursor-pointer text-3xl text-primary dark:text-white" @click="themeSwitch()"
+                :class="isDarkMode ? 'bxs-sun' : 'bxs-moon'"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="pointer-events-none fixed inset-0 z-50 flex bg-black bg-opacity-80 opacity-0 transition-opacity lg:hidden"
+      :class="isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : ''">
+      <div class="ml-auto w-2/3 bg-green p-4 md:w-1/3">
+        <i class="bx bx-x absolute top-0 right-0 mt-4 mr-4 text-4xl text-white" @click="isMobileMenuOpen = false"></i>
+        <ul class="mt-8 flex flex-col">
+
+          <li class="">
+            <a href="/" class="mb-3 block px-2 font-body text-lg font-medium text-white">Intro</a>
+          </li>
+
+          <li class="">
+            <a href="/blog" class="mb-3 block px-2 font-body text-lg font-medium text-white">Blog</a>
+          </li>
+
+          <li class="">
+            <a href="/uses" class="mb-3 block px-2 font-body text-lg font-medium text-white">Uses</a>
+          </li>
+
+          <li class="">
+            <a href="/contact" class="mb-3 block px-2 font-body text-lg font-medium text-white">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div>
+      <div class="container mx-auto">
+        <div class="pt-16 lg:pt-20">
+          <div class="border-b border-grey-lighter pb-8 sm:pb-12">
+            <span
+              class="mb-5 inline-block rounded-full bg-green-light px-2 py-1 font-body text-sm text-green sm:mb-8">travel</span>
+            <h2
+              class="block font-body text-3xl font-semibold leading-tight text-primary dark:text-white sm:text-4xl md:text-5xl">
+              The Singular Majesty of a Mountain Reverie
+            </h2>
+            <div class="flex items-center pt-5 sm:pt-8">
+              <p class="pr-2 font-body font-light text-primary dark:text-white">
+                September 5, 2023
+              </p>
+              <span class="vdark:text-white font-body text-grey">//</span>
+              <p class="pl-2 font-body font-light text-primary dark:text-white">
+                6 min read
+              </p>
+            </div>
+          </div>
+          <div class="prose prose max-w-none border-b border-grey-lighter py-8 dark:prose-dark sm:py-12">
+            <img src="/assets/img/tilicho/landslide-man.webp" alt="Image" />
+            <h3 id="lorem-ipsum-dolor-sit-amet">Enchanted by Nature's Marvels</h3>
+            <p>We've all experienced places in our lives that make us ponder their purpose. The sight of a towering
+              mountain, in particular, invokes a sense of awe that leaves us grasping for words. It draws us in,
+              compelling us to hold onto ourselves, as if it has the power to extract our troubles like a magnet pulling
+              iron fillings from sand.</p>
+            <h3 id="lorem-ipsum-dolor-sit-amet">Unplanned Odyssey: Embracing Spontaneity</h3>
+            <img src="/assets/img/tilicho/blue.webp" alt="Image" />
+
+            <p>I've earned a reputation among my close circle as a spontaneous and solitary soul, and it's
+              well-deserved.
+              I often find myself engaging in unplanned adventures, driven by inner desires that urge me to break free
+              from the monotony of daily routines. As cliché as it may sound, it's during these moments of losing myself
+              in the present that I truly discover who I am. It deepens my appreciation for life—the simple act of
+              breathing, the power of love, the joy of being loved, and the sheer wonder of being alive. In the
+              wilderness, I become more human, more vulnerable, and more willing to embrace my true self.</p>
+            <img src="/assets/img/tilicho/shadow.webp" alt="Image" />
+
+
+            <blockquote>
+              <p> These spontaneous adventures, though clichéd, have
+                been my sanctuary, allowing me to break free from the shackles of routine.</p>
+            </blockquote>
+
+            <h3 id="lorem-ipsum-dolor-sit-amet">Manang: Where Mountains Breathe Life</h3>
+            <img src="/assets/img/tilicho/shank.webp" alt="Image" />
+
+            <p>I consider myself fortunate to have visited a few places that amplify these experiences, and among them
+              is a journey to the lands beyond the Himalayas, specifically the district nestled at the southern edge of
+              the mountains, Manang. In geological terms, the Himalayas were formed through the gradual tectonic
+              collision of the Asian and Eurasian plates, an ongoing process that continually shapes the world's tallest
+              peak, Everest. I mention this because when you arrive in Manang, you can sense an incredible energy
+              emanating from the land—a profound feeling of being connected to a living, ever-changing landscape. It's
+              as if the place itself breathes, morphing with each passing second, minute, and breath. Manang is the
+              beating heart of the Himalayas, and it will embrace you fully if you surrender to its allure.
+            </p>
+
+            <h3 id="lorem-ipsum-dolor-sit-amet">Contemplation Amidst Majestic Peaks
+            </h3>
+            <img src="/assets/img/tilicho/uphill.webp" alt="Image" />
+            <p>One clear November evening, as I sat at the confluence of two glacial rivers, I gazed at the sun casting
+              its golden light upon the mountains. I was there, absorbing as much as my senses could handle, when a
+              question arose within me: What sets humans apart from these majestic peaks? What force could have birthed
+              both of us into existence?
+            </p>
+
+            <h3 id="lorem-ipsum-dolor-sit-amet">Nature's Eternal Mirrors
+            </h3>
+            <img src="/assets/img/tilicho/landslide.webp" alt="Image" />
+            <p>Mountains require no one's attention, unlike everything in the human world. It's easy to become entangled
+              in our thoughts and the routines of life, losing touch with our innermost feelings. Mountains, however,
+              don't set goals or seek purpose; they simply exist. They stand tall, weathering the elements of life and
+              nature without complaint. They are ethereal and eternal.
+            </p>
+
+
+
+            <h3 id="lorem-ipsum-dolor-sit-amet">Reflections in the Heart of the Himalayas
+            </h3>
+            <img src="/assets/img/tilicho/ppl walk on snow.webp" alt="Image" />
+            <p>Perhaps these are the questions that mountains compel us to confront—questions buried deep within us.
+              Mountains are nothing less than eternal mirrors, reflecting not only the snow but also the admirer, the
+              wanderer, the traveler, and anyone willing to see themselves as clearly as the glacial reflections and as
+              openly as the night skies of the Himalayas. They embrace us, just as lovingly as they do the snow on their
+              peaks.</p>
+
+
+
+
+
+
+
+
+          </div>
+
+          <div class="flex items-center py-10">
+            <span class="pr-5 font-body font-medium text-primary dark:text-white">Share</span>
+            <a href="/">
+              <i
+                class="bx bxl-facebook text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"></i></a>
+            <a href="/">
+              <i
+                class="bx bxl-twitter pl-2 text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"></i>
+            </a>
+            <a href="/">
+              <i
+                class="bx bxl-linkedin pl-2 text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"></i></a>
+            <a href="/">
+              <i
+                class="bx bxl-reddit pl-2 text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto">
+      <div class="flex flex-col items-center justify-between border-t border-grey-lighter py-10 sm:flex-row sm:py-12">
+        <div class="mr-auto flex flex-col items-center sm:flex-row">
+          <a href="/" class="mr-auto sm:mr-6">
+            <img src="/assets/img/reee crop.svg" alt="logo" />
+          </a>
+          <p class="pt-5 font-body font-light text-primary dark:text-white sm:pt-0">
+            ©2023 Hridesh Sapkota.
+          </p>
+        </div>
+        <div class="mr-auto flex items-center pt-5 sm:mr-0 sm:pt-0">
+
+          <a href="https://github.com/ " target="_blank">
+            <i
+              class="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-github"></i>
+          </a>
+
+          <a href="https://codepen.io/ " target="_blank">
+            <i
+              class="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-codepen"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/ " target="_blank">
+            <i
+              class="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-linkedin"></i>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>
