@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+
+
+    <title>Here are my experiences with using Upwork for 30 days</title>
+
+    <meta property="og:title" content="From Shadows to Light: AI Biases and Societal Reflections | Hridesh Sapkota" />
+
+    <meta property="og:locale" content="en_US" />
+
+
+    <meta property="og:url" content="https://hrideshsapkota.com.np/allegory" />
+
+    <meta name="description"
+        content="Explore Plato's Allegory of the Cave, AI biases reflecting society's shadows, and embrace responsibility for transformative change in this insightful blog post by Hridesh Sapkota." />
+
+    <link rel="icon" type="image/png" href="/assets/img/reee crop.svg" />
+
+    <meta property="og:site_name" content="Hridesh Sapkota" />
+
+
+    <meta property="og:image"
+        content="https://github.com/hridesh94/Atlas/blob/main/assets/img/allegory/robot%20and%20human.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="twitter:site" content="@hrideshsapkota" />
+
+    <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect" />
+
+    <link as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="preload" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
+
+    <link crossorigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-dark.min.css" />
+
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+    <!-- Alpine Js V3 -->
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+
+
+<body x-data="global()" x-init="themeInit()" :class="isMobileMenuOpen ? 'max-h-screen overflow-hidden relative' : ''"
+    class="dark:bg-primary">
+
+    <div id="main">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between py-6 lg:py-10">
+                <a href="/" class="flex items-center">
+                    <span href="/" class="mr-2">
+                        <img src="/assets/img/reee crop.svg" alt="logo" />
+                    </span>
+                    <p class="hidden font-body text-2xl font-bold text-primary dark:text-white lg:block">
+                        Hridesh
+                    </p>
+                </a>
+                <div class="flex items-center lg:hidden">
+                    <i class="bx mr-8 cursor-pointer text-3xl text-primary dark:text-white" @click="themeSwitch()"
+                        :class="isDarkMode ? 'bxs-sun' : 'bxs-moon'"></i>
+
+                    <svg width="24" height="15" xmlns="http://www.w3.org/2000/svg" @click="isMobileMenuOpen = true"
+                        class="fill-current text-primary dark:text-white">
+                        <g fill-rule="evenodd">
+                            <rect width="24" height="3" rx="1.5" />
+                            <rect x="8" y="6" width="16" height="3" rx="1.5" />
+                            <rect x="4" y="12" width="20" height="3" rx="1.5" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="hidden lg:block">
+                    <ul class="flex items-center">
+
+                        <li class="group relative mr-6 mb-1">
+                            <div
+                                class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
+                            </div>
+                            <a href="/"
+                                class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Intro</a>
+                        </li>
+
+                        <li class="group relative mr-6 mb-1">
+                            <div
+                                class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
+                            </div>
+                            <a href="/blog"
+                                class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Blog</a>
+                        </li>
+
+                        <li class="group relative mr-6 mb-1">
+                            <div
+                                class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
+                            </div>
+                            <a href="/uses"
+                                class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Uses</a>
+                        </li>
+
+                        <li class="group relative mr-6 mb-1">
+                            <div
+                                class="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow">
+                            </div>
+                            <a href="/contact"
+                                class="relative z-30 block px-2 font-body text-lg font-medium text-primary transition-colors group-hover:text-green dark:text-white dark:group-hover:text-secondary">Contact</a>
+                        </li>
+
+                        <li>
+                            <i class="bx cursor-pointer text-3xl text-primary dark:text-white" @click="themeSwitch()"
+                                :class="isDarkMode ? 'bxs-sun' : 'bxs-moon'"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="pointer-events-none fixed inset-0 z-50 flex bg-black bg-opacity-80 opacity-0 transition-opacity lg:hidden"
+            :class="isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : ''">
+            <div class="ml-auto w-2/3 bg-green p-4 md:w-1/3">
+                <i class="bx bx-x absolute top-0 right-0 mt-4 mr-4 text-4xl text-white"
+                    @click="isMobileMenuOpen = false"></i>
+                <ul class="mt-8 flex flex-col">
+
+                    <li class="">
+                        <a href="/" class="mb-3 block px-2 font-body text-lg font-medium text-white">Intro</a>
+                    </li>
+
+                    <li class="">
+                        <a href="/blog" class="mb-3 block px-2 font-body text-lg font-medium text-white">Blog</a>
+                    </li>
+
+                    <li class="">
+                        <a href="/uses" class="mb-3 block px-2 font-body text-lg font-medium text-white">Uses</a>
+                    </li>
+
+                    <li class="">
+                        <a href="/contact" class="mb-3 block px-2 font-body text-lg font-medium text-white">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="container mx-auto">
+                <div class="pt-16 lg:pt-20">
+                    <div class="border-b border-grey-lighter pb-8 sm:pb-12">
+                        <span
+                            class="mb-5 inline-block rounded-full bg-green-light px-2 py-1 font-body text-sm text-green sm:mb-8">Technology</span>
+                        <span
+                            class="mb-4 inline-block rounded-full bg-green-light px-2 py-1 font-body text-sm text-green-dark">Society</span>
+
+                        <h2
+                            class="block font-body text-3xl font-semibold leading-tight text-primary dark:text-white sm:text-4xl md:text-5xl">
+                            Here are my experiences with using Upwork for 30 days
+                        </h2>
+                        <div class="flex items-center pt-5 sm:pt-8">
+                            <p class="pr-2 font-body font-light text-primary dark:text-white">
+                                February 4, 2024
+                            </p>
+                            <span class="vdark:text-white font-body text-grey">//</span>
+                            <p class="pl-2 font-body font-light text-primary dark:text-white">
+                                5 min read
+                            </p>
+                        </div>
+                    </div>
+                    <div class="prose prose max-w-none border-b border-grey-lighter py-8 dark:prose-dark sm:py-12">
+                        <img src="/assets/img/allegory/caveww.webp" alt="Allegory of the cave" />
+                        <h3 id="lorem-ipsum-dolor-sit-amet">Background:</h3>
+                        <p>It's exam time again, and I don’t know why, but I am productive in every sense except for the
+                            exam preparation. And sometimes I catch this high tide moment to embark on new ideas and
+                            experiments from time to time. Being a freelancer online was one of those new ideas that hit
+                            me at the end of December 2023. And up until writing this blog, it's been a month since I've
+                            been continuing this. Here's my little journey in the online freelancing world, specifically
+                            Upwork.
+                            <--!<a href="https://www.youtube.com/watch?v=1RWOpQXTltA"
+                                style="text-decoration:none">allegory of the cave</a>, nestled within his work, "The
+                                Republic."
+                        </p>-->
+
+
+
+                        <p>So I have been working on audio video editing extensively for a few years now. Since last
+                            year, I have been working in a professional space beyond just my personal projects.
+                            Like every other creative space, I struggle with finding myself to not like the mundane and
+                            am always keen on learning new ways to grow. The idea of freelancing was not new to me;
+                            however, I hadn't done anything online; it was mostly just word-of-mouth freelancing among
+                            the circles.
+                        </p>
+
+
+                        <p>TThe in-person freelancing work has its own pros and cons, with the major con being that the
+                            date of payment was uncertain. I mean, I was working with people whom I could at least trust
+                            a bit, but still, these uncertainties won't lead me to creating a successful business.
+
+                        </p>
+
+                        <blockquote>
+                            <p>The shadows of bias have cast a long history, an indelible part of human existence.
+                            </p>
+                        </blockquote>
+
+                        <h3 id="lorem-ipsum-dolor-sit-amet">Week 1: Creation</h3>
+
+                        <p>The first week on Upwork was like heading into the unknown, as I was just figuring out the
+                            way the platform works and how to utilise its features. I had to take some time to go
+                            through my dusty hard drive to find the things that would make me stand out.
+
+                        </p>
+
+
+
+                        <p>IAfter setting up my initial profile, the next step was to write the proposals to the clients
+                            as I discovered the work that needed to be done. Now that I look back, it was easy to go for
+                            every opportunity you could find to make a quick buck.
+                            However, I was not making much progress on getting traction for a few interactions, leading
+                            to not much work. I was also running out of Connects at this point, which can be a major
+                            factor in whether you get clients or not.
+
+                        </p>
+
+                        <div class="twitter-card">
+                            <h4 class="twitter-card-title"> "Our data archives, collected over time, might unwittingly
+                                encapsulate the very biases we seek to overcome. These biases find their way into the
+                                algorithms, resulting in skewed outputs."</h4>
+
+
+                        </div>
+
+
+
+                        <h3 id="sed-do-eiusmod-tempor-incididunt">Week 2: Connects
+                        </h3>
+
+                        <p>The concept of Connects acts as a token that is required by freelancers to get the clients to
+                            send the proposal. To some extent, this must be a way to prevent spamming of their inboxes,
+                            as it would seriously limit the people who are applying, at least the ones with malicious
+                            intent. But it can also be a major hurdle for a beginner freelancer, as it was for me. You
+                            need to have some money to spare or gamble on sending the proposals before you land a
+                            successful gig.
+
+
+                        </p>
+
+                        <p><img src="/assets/img/allegory/robot and humanw.webp" alt="Image" /></p>
+
+                        <p>As I closed the book that had ignited this trail of thought, I realized that the shadows in
+                            Plato's cave weren't just an ancient allegory—they were living on in our AI systems,
+                            compelling us to unravel their mystery. The journey from the cave's darkness to the light of
+                            understanding requires not just algorithms, but a concerted effort to restructure our
+                            societies, casting aside the chains of bias and forging a new path forward.
+                        </p>
+                        <h3 id="sed-do-eiusmod-tempor-incididunt">Week 3: Rethinking Cover Letters
+
+                        </h3>
+
+                        <p>We are all familiar with cover letters in the traditional job application sense. Upwork has
+                            the feature of sending a cover letter with every proposal. As a beginner, you are compelled
+                            to stick to the format that we are all used to, which can be a bit of a challenge to
+                            actually land the job.
+
+
+                        </p>
+
+                        <p><img src="/assets/img/allegory/robot and humanw.webp" alt="Image" /></p>
+
+                        <p>After facing a lot of unread proposals and wasted connections, I realised that I needed to up
+                            my cover letter game; hence, I started being more strategic about standing out among the
+                            crowd. This led me on to getting to the point where I could talk to people and further make
+                            the impression that I was capable of doing their work.
+
+
+                        </p>
+                        <p>You see, Upwork is a fairly popular platform and has hundreds, if not thousands, of
+                            freelancers looking at the same job you are looking for, which means there's a lot of
+                            competition for even the simplest of gigs. The client is used to being bombarded with these
+                            same generic-looking cover letters and may not even go through your profile if it doesn't
+                            make you stand out.
+                        </p>
+                        <p>So the trick really is to put yourself in the shoes of the client, understand their needs,
+                            and put their thoughts into your words. It has to assure the client that you are really what
+                            they need for this job and have read the full description, which gives them confidence that
+                            you are really capable of doing this. The format of the cover letter that we are taught to
+                            write can be a hurdle in our freelancing journey. We need to rethink the whole cover letter
+                            idea to stand out among the competition.</p>
+                        <h3 id="sed-do-eiusmod-tempor-incididunt">Week 4: Freelancer Pro
+
+                        </h3>
+
+                        <p>This was another phase for my upwork journey, as with the jobs that you get initially, you
+                            are compelled to put your prices fairly low, which means you don’t have a clue on setting
+                            the right amount for a particular gig. The freelancer pro gives you this ability to see what
+                            the bidding ranges are for a certain project, which gives you a general sense of where you
+                            want to put your pricing.
+
+                        </p>
+
+                        <p><img src="/assets/img/allegory/robot and humanw.webp" alt="Image" /></p>
+
+                        <p>I wouldn't say this is a game changer or even worth it for everyone, but if you want to go
+                            the extra mile to do justice to yourself fairly, along with understanding the competition,.
+                            This can be a good-to-have tool.
+
+
+                        </p>
+                        <h3 id="sed-do-eiusmod-tempor-incididunt">Conclusion:
+
+                        </h3>
+
+                        <p>Upwork in 2024 is a great way to have a bit of passive income if you have the skills and
+                            patience to be tested by this platform. There are definitely challenges in navigating this
+                            platform, but the reward can be quite fruitful once you understand this path. The only
+                            advice I can give, as someone who's also a beginner and is figuring it out, is that you need
+                            to get your hands dirty. The ultimate hack or trick, whatever you may want to call it, is to
+                            just get started.
+
+
+
+                        </p>
+
+
+
+
+
+
+                        <div class="flex items-center py-10">
+                            <span class="pr-5 font-body font-medium text-primary dark:text-white">Share</span>
+                            <a
+                                href="https://www.facebook.com/sharer/sharer.php?u=https://hrideshsapkota.com.np/allegory">
+                                <i
+                                    class="bx bxl-facebook text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"></i></a>
+                            <a href="https://twitter.com/intent/tweet?text=https%3A//hrideshsapkota.com.np/allegory">
+                                <i
+                                    class="bx bxl-twitter pl-2 text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"></i>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//hrideshsapkota.com.np/allegory">
+                                <i
+                                    class="bx bxl-linkedin pl-2 text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"></i></a>
+                            <a
+                                href="https://reddit.com/submit?url=https://hrideshsapkota.com.np/allegory&title=From%20Shadows%20to%20Light:%20AI%20Biases%20and%20Societal%20Reflections">
+                                <i
+                                    class="bx bxl-reddit pl-2 text-2xl text-primary transition-colors hover:text-secondary dark:text-white dark:hover:text-secondary"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mx-auto">
+                <div
+                    class="flex flex-col items-center justify-between border-t border-grey-lighter py-10 sm:flex-row sm:py-12">
+                    <div class="mr-auto flex flex-col items-center sm:flex-row">
+                        <a href="/" class="mr-auto sm:mr-6">
+                            <img src="/assets/img/reee crop.svg" alt="logo" />
+                        </a>
+                        <p class="pt-5 font-body font-light text-primary dark:text-white sm:pt-0">
+                            ©2024 Hridesh Sapkota.
+                        </p>
+                    </div>
+                    <div class="mr-auto flex items-center pt-5 sm:mr-0 sm:pt-0">
+
+                        <a href="https://github.com/hridesh94 " target="_blank">
+                            <i
+                                class="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-github"></i>
+                        </a>
+
+                        <a href="https://codepen.io/hridesh94 " target="_blank">
+                            <i
+                                class="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-codepen"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/hridesh-sapkota-4a2bb9236/" target="_blank">
+                            <i
+                                class="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-linkedin"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>
